@@ -14,7 +14,6 @@ long long weights[MAXN];
 int in[MAXN];
 int out[MAXN];
 int level[MAXN];
-int parent[MAXN];
 long long bit[MAXN + 1];
 
 vector<int> trav;
@@ -26,7 +25,6 @@ void dfs(int node, int p, int l)
 
     level[node] = l;
     in[node] = tim;
-    parent[node] = p;
 
     trav.push_back(node);
     index_in_trav[node] = trav.size() - 1;
@@ -115,7 +113,6 @@ void init()
     memset(in, 0, n * sizeof(int));
     memset(out, 0, n * sizeof(int));
     memset(level, 0, n * sizeof(int));
-    memset(parent, 0, n * sizeof(int));
     memset(index_in_trav, 0, n * sizeof(int));
     trav.clear();
 
