@@ -63,7 +63,6 @@ int main()
         }
         else
         {
-
             cout << (res + 1) / 2 << "\n";
         }
     }
