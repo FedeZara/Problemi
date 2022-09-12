@@ -3,12 +3,12 @@
 
 using namespace std;
 
-vector<vector<long long>> a;
-vector<vector<long long>> b;
-vector<vector<long long>> a_ps;
-vector<vector<long long>> b_ps;
+vector<vector<long long> > a;
+vector<vector<long long> > b;
+vector<vector<long long> > a_ps;
+vector<vector<long long> > b_ps;
 
-vector<vector<long long>> dp;
+vector<vector<long long> > dp;
 
 void init(int N, int M)
 {
